@@ -1,0 +1,140 @@
+main {
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+  color: white;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Cinzel Bold"), url("./woff/Cinzel-Bold.otf") format("woff");
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: black;
+
+  font {
+    text-size-adjust: none;
+  }
+
+  font[size="1"] {
+    font-size: 13px;
+  }
+
+  font[size="2"] {
+    font-size: 15px;
+  }
+
+  font[size="3"] {
+    font-size: 17px;
+  }
+
+  font[size="4"] {
+    font-size: 19px;
+  }
+
+  font[size="5"] {
+    font-size: 21px;
+  }
+
+  font[size="6"] {
+    font-size: 23px;
+  }
+
+  font[size="7"] {
+    font-size: 25px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  scrollbar-width: none;
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+
+  font-family: "pretendard", sans-serif !important;
+}
+
+html,
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "pretendard", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.none {
+  display: none !important;
+}
+
+input,
+p,
+textarea {
+  resize: none;
+  font-family: "pretendard", sans-serif;
+  padding: 16px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "pretendard", sans-serif;
+    color: #949494;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

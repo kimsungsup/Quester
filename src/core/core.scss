@@ -5,12 +5,12 @@ main {
   color: white;
 }
 
-@font-face {
-  font-family: "Cinzel";
-  font-weight: 700;
-  font-display: swap;
-  src: local("Cinzel Bold"), url("./woff/Cinzel-Bold.otf") format("woff");
-}
+// @font-face {
+//   font-family: "Cinzel";
+//   font-weight: 700;
+//   font-display: swap;
+//   src: local("Cinzel Bold"), url("./woff/Cinzel-Bold.otf") format("woff");
+// }
 
 #root {
   width: 100%;
@@ -102,10 +102,6 @@ a {
 
 img {
   width: 100%;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 input:focus {

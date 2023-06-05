@@ -3,11 +3,13 @@ import "./App.css";
 import { UserAgentType } from "./common/common.inerface";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main/Main";
+import Header from "./components/Header/Header";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
   return (
     <BrowserRouter>
+      <Header userAgent={userAgent} />
       <Routes>
         <Route path="/" element={<Main userAgent={userAgent} />} />
       </Routes>

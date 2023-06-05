@@ -1,0 +1,50 @@
+#root .main-page .main-section {
+  width: 100%;
+  height: 852px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#root .main-page .main-section .section-wrapper {
+  position: relative;
+  padding-top: 127px;
+  width: 1326px;
+  margin: 0 auto;
+  height: 100%;
+}
+#root .main-page .main-section .section-wrapper > .title-section .title {
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+#root .main-page .main-section .section-wrapper > .title-section .subtitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+}
+#root .main-page .main-section .section-wrapper > .title-section .text {
+  position: absolute;
+  bottom: 99px;
+  right: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-page .main-section {
+    background-image: url(/public/assets/main/pc/main-img.png);
+    background-image: -webkit-image-set(url(/public/assets/main/pc/main-img.png) 1x, url(/public/assets/main/pc/main-img@2x.png) 2x, url(/public/assets/main/pc/main-img@3x.png) 3x);
+  }
+}

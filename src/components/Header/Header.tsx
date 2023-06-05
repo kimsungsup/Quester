@@ -32,11 +32,54 @@ const Header = ({ userAgent }: Props) => {
 
   return (
     <>
-      <header className={HeaderState}></header>
+      <header>
+        <div className="wrapper">
+          <div className="navbar">
+            <Link to="/" className="logo-link">
+              <img src="/assets/common/logo.svg" alt="quester" />
+            </Link>
+            {userAgent === "pc" && (
+              <div className="pc-nav-wrapper">
+                {layout.map(({ title, link }, idx) => {
+                  return (
+                    <Link to={link} key={idx} className="pc-nav">
+                      {title}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      </header>
+      {userAgent !== "pc" && (
+        <div className={`mb-header ${isOpen && "open-header"}`}>
+          {layout.map(({ link, title }, idx) => {
+            return (
+              <Link to={link} className="mb-menu" key={idx}>
+                {title}
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </>
   );
 };
 
 export default Header;
 
-const navItems = [];
+const layout = [
+  {
+    title: "TECHNOLOGY",
+    link: "/technology",
+  },
+  {
+    title: "EDUCATION",
+    link: "/education",
+  },
+  {
+    title: "CONTACT US",
+    link: "/contact",
+  },
+];

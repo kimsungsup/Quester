@@ -33,16 +33,20 @@ const Education = ({ userAgent }: Props) => {
             <img src="/assets/education/pc/plab.svg" alt="icon" />
           </div>
           <div className="title">
-            PLAB은 현실적인 가상 실험(Realistic Virtual Experiment) <br />
-            소프트웨어로, 높은 자유도의 가상 실험 콘텐츠를 구현하여 <br />
+            PLAB은 현실적인 가상 실험
+            <br className="mb" />
+            (Realistic Virtual Experiment) <br />
+            소프트웨어로, <br className="mb" />
+            높은 자유도의 가상 실험 콘텐츠를 구현하여 <br />
             기존 실험 교육의 매커니즘을 혁신합니다
           </div>
 
           <div className="text">
-            퀘스터의 가상 실험 소프트웨어는 LMS 시스템이 탑재된 교육 플랫폼 내{" "}
-            <br />
-            가상 실험 교육 콘텐츠를 제공하며 전용 컨트롤러도 기존 실험 수업을
-            효과적으로 대체할 수 있습니다.
+            퀘스터의 가상 실험 소프트웨어는 <br className="mb" /> LMS 시스템이
+            탑재된 교육 플랫폼 내 <br />
+            가상 실험 교육 콘텐츠를 제공하며 전용 컨트롤러도{" "}
+            <br className="mb" /> 기존 실험 수업을 효과적으로 대체할 수
+            있습니다.
           </div>
         </div>
       </div>
@@ -141,7 +145,12 @@ const section2 = [
 
   {
     img: "/assets/education/pc/icon5.svg",
-    title: "높은 몰입도를 통한 학습자의 흥미 유발",
+    title: (
+      <>
+        높은 몰입도를 통한
+        <br className="mb" /> 학습자의 흥미 유발
+      </>
+    ),
     text: (
       <>
         퀘스터의 가상 실험 소프트웨어는 학습자가 소프트웨어의 조작 방식을 선택할

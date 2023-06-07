@@ -325,26 +325,24 @@
   #root {
     .education-page {
       .section {
-        margin-bottom: 146px;
+        margin-bottom: 161px;
         .background {
-          height: 520px;
-          background-image: url(/public/assets/education/tablet/education-img.png);
+          height: 512px;
+          background-image: url(/public/assets/education/mb/education-img.png);
           background-image: -webkit-image-set(
-            url(/public/assets/education/tablet/education-img.png) 1x,
-            url(/public/assets/education/tablet/education-img@2x.png) 2x,
-            url(/public/assets/education/tablet/education-img@3x.png) 3x
+            url(/public/assets/education/mb/education-img.png) 1x,
+            url(/public/assets/education/mb/education-img@2x.png) 2x,
+            url(/public/assets/education/mb/education-img@3x.png) 3x
           );
 
           & > .title {
-            font-size: 60px;
+            font-size: 50px;
           }
-          & > .text {
-            font-size: 20px;
-          }
+
           .line {
             width: 2px;
-            height: 182px;
-            bottom: -60px;
+            height: 221px;
+            bottom: -100px;
           }
         }
       }
@@ -353,89 +351,62 @@
         margin-bottom: 265px;
         height: 335px;
 
-        .wrapper {
-          width: 768px;
+        background-image: url(/public/assets/education/mb/section1-img.png);
+        background-image: -webkit-image-set(
+          url(/public/assets/education/mb/section1-img.png) 1x,
+          url(/public/assets/education/mb/section1-img@2x.png) 2x,
+          url(/public/assets/education/mb/section1-img@3x.png) 3x
+        );
 
+        .wrapper {
+          width: 360px;
           .plab {
-            top: -120px;
-            width: 255px;
+            top: -80px;
+            width: 215px;
           }
 
           .character {
-            right: -50px;
-            bottom: -230px;
-            width: 188px;
+            right: -0px;
+            bottom: -150px;
+            width: 127px;
           }
 
           & > .title {
-            font-size: 20px;
-          }
-          & > .text {
-            font-size: 13px;
+            font-size: 18px;
           }
         }
       }
 
       .section2 {
-        margin-bottom: 292px;
+        margin-bottom: 229px;
 
         & > .title {
-          font-size: 60px;
-          margin-bottom: 62px;
+          font-size: 50px;
         }
 
         & > .content {
-          padding-top: 50px;
-          width: 688px;
-          height: 1333px;
-          border-radius: 50px;
-          column-gap: 50px;
-          row-gap: 100px;
+          width: 328px;
+          height: 2319px;
+          border-radius: 20px;
+          column-gap: unset;
+          row-gap: 70px;
 
-          .box {
-            width: 268px;
-            height: 302px;
-
-            & > .img {
-              margin-bottom: 30px;
-              width: 130px;
-              height: 130px;
-
-              & > img {
-                width: 86px;
-              }
-            }
-            & > .gradation {
-              margin-bottom: 30px;
-              width: 130px;
-              height: 130px;
-            }
-            & > .title {
-              margin-bottom: 10px;
-              font-size: 20px;
-            }
-            & > .text {
-              font-size: 13px;
-            }
-          }
           .last {
-            width: 320px;
+            width: 288px;
           }
         }
       }
 
       .section3 {
         .title-wrapper {
-          text-align: center;
-          margin-bottom: 90px;
+          margin-bottom: 74px;
 
           & > .title {
-            font-size: 60px;
-            margin-bottom: 16px;
+            font-size: 50px;
           }
 
           & > .text {
-            font-size: 20px;
+            font-size: 18px;
           }
         }
       }

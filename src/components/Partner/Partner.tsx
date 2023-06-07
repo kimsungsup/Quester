@@ -9,7 +9,14 @@ const Partnea = () => {
         {partnea.map((item, idx) => {
           return (
             <div key={idx} className="box">
-              <img src={item} about="" />
+              <img src={item} alt="" />
+            </div>
+          );
+        })}
+        {partnea.map((item, idx) => {
+          return (
+            <div key={idx} className="box">
+              <img src={item} alt="" />
             </div>
           );
         })}

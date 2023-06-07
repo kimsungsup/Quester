@@ -1,7 +1,9 @@
 #root {
   .partnea {
+    padding-bottom: 316px;
+
     .content {
-      width: 100%;
+      width: fit-content;
       height: 218px;
       background-color: #242627;
       display: flex;
@@ -10,23 +12,27 @@
       column-gap: 100px;
 
       .box {
+        width: fit-content;
         display: flex;
         overflow: hidden;
-        animation: rotateImages 3s linear infinite;
-        display: flex;
+        animation: rotateImages 9s linear infinite;
 
-        & > img {
-          width: 100%;
+        &>img {
+          width: fit-content;
         }
+
       }
+
     }
   }
 }
+
 @keyframes rotateImages {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(100%);
+    transform: translateX(-670%);
   }
 }

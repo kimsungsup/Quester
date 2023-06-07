@@ -216,3 +216,200 @@
   font-size: 30px;
   line-height: 140%;
 }
+
+@media screen and (max-width: 1439px) {
+  #root .education-page .section {
+    margin-bottom: 146px;
+  }
+  #root .education-page .section .background {
+    height: 520px;
+    background-image: url(/public/assets/education/tablet/education-img.png);
+    background-image: -webkit-image-set(url(/public/assets/education/tablet/education-img.png) 1x, url(/public/assets/education/tablet/education-img@2x.png) 2x, url(/public/assets/education/tablet/education-img@3x.png) 3x);
+  }
+  #root .education-page .section .background > .title {
+    font-size: 60px;
+  }
+  #root .education-page .section .background > .text {
+    font-size: 20px;
+  }
+  #root .education-page .section .background .line {
+    width: 2px;
+    height: 182px;
+    bottom: -60px;
+  }
+  #root .education-page .section1 {
+    margin-bottom: 265px;
+    height: 335px;
+  }
+  #root .education-page .section1 .wrapper {
+    width: 768px;
+  }
+  #root .education-page .section1 .wrapper .plab {
+    top: -120px;
+    width: 255px;
+  }
+  #root .education-page .section1 .wrapper .character {
+    right: -50px;
+    bottom: -230px;
+    width: 188px;
+  }
+  #root .education-page .section1 .wrapper > .title {
+    font-size: 20px;
+  }
+  #root .education-page .section1 .wrapper > .text {
+    font-size: 13px;
+  }
+  #root .education-page .section2 {
+    margin-bottom: 292px;
+  }
+  #root .education-page .section2 > .title {
+    font-size: 60px;
+    margin-bottom: 62px;
+  }
+  #root .education-page .section2 > .content {
+    padding-top: 50px;
+    width: 688px;
+    height: 1333px;
+    border-radius: 50px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 100px;
+  }
+  #root .education-page .section2 > .content .box {
+    width: 268px;
+    height: 302px;
+  }
+  #root .education-page .section2 > .content .box > .img {
+    margin-bottom: 30px;
+    width: 130px;
+    height: 130px;
+  }
+  #root .education-page .section2 > .content .box > .img > img {
+    width: 86px;
+  }
+  #root .education-page .section2 > .content .box > .gradation {
+    margin-bottom: 30px;
+    width: 130px;
+    height: 130px;
+  }
+  #root .education-page .section2 > .content .box > .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #root .education-page .section2 > .content .box > .text {
+    font-size: 13px;
+  }
+  #root .education-page .section2 > .content .last {
+    width: 320px;
+  }
+  #root .education-page .section3 .title-wrapper {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  #root .education-page .section3 .title-wrapper > .title {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  #root .education-page .section3 .title-wrapper > .text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #root .education-page .section {
+    margin-bottom: 146px;
+  }
+  #root .education-page .section .background {
+    height: 520px;
+    background-image: url(/public/assets/education/tablet/education-img.png);
+    background-image: -webkit-image-set(url(/public/assets/education/tablet/education-img.png) 1x, url(/public/assets/education/tablet/education-img@2x.png) 2x, url(/public/assets/education/tablet/education-img@3x.png) 3x);
+  }
+  #root .education-page .section .background > .title {
+    font-size: 60px;
+  }
+  #root .education-page .section .background > .text {
+    font-size: 20px;
+  }
+  #root .education-page .section .background .line {
+    width: 2px;
+    height: 182px;
+    bottom: -60px;
+  }
+  #root .education-page .section1 {
+    margin-bottom: 265px;
+    height: 335px;
+  }
+  #root .education-page .section1 .wrapper {
+    width: 768px;
+  }
+  #root .education-page .section1 .wrapper .plab {
+    top: -120px;
+    width: 255px;
+  }
+  #root .education-page .section1 .wrapper .character {
+    right: -50px;
+    bottom: -230px;
+    width: 188px;
+  }
+  #root .education-page .section1 .wrapper > .title {
+    font-size: 20px;
+  }
+  #root .education-page .section1 .wrapper > .text {
+    font-size: 13px;
+  }
+  #root .education-page .section2 {
+    margin-bottom: 292px;
+  }
+  #root .education-page .section2 > .title {
+    font-size: 60px;
+    margin-bottom: 62px;
+  }
+  #root .education-page .section2 > .content {
+    padding-top: 50px;
+    width: 688px;
+    height: 1333px;
+    border-radius: 50px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 100px;
+  }
+  #root .education-page .section2 > .content .box {
+    width: 268px;
+    height: 302px;
+  }
+  #root .education-page .section2 > .content .box > .img {
+    margin-bottom: 30px;
+    width: 130px;
+    height: 130px;
+  }
+  #root .education-page .section2 > .content .box > .img > img {
+    width: 86px;
+  }
+  #root .education-page .section2 > .content .box > .gradation {
+    margin-bottom: 30px;
+    width: 130px;
+    height: 130px;
+  }
+  #root .education-page .section2 > .content .box > .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #root .education-page .section2 > .content .box > .text {
+    font-size: 13px;
+  }
+  #root .education-page .section2 > .content .last {
+    width: 320px;
+  }
+  #root .education-page .section3 .title-wrapper {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  #root .education-page .section3 .title-wrapper > .title {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  #root .education-page .section3 .title-wrapper > .text {
+    font-size: 20px;
+  }
+}

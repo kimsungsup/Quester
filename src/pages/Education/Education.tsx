@@ -82,7 +82,7 @@ const Education = ({ userAgent }: Props) => {
           </div>
         </div>
 
-        <Partnea />
+        {/* <Partnea /> */}
       </div>
     </main>
   );

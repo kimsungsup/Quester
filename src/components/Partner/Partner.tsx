@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./css/index.css";
-import { UserAgentType } from "../../common/common.inerface";
 
 const Partnea = () => {
   return (

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Header from "./components/Header/Header";
 import Tech from "./pages/Tech/Tech";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
@@ -45,6 +46,7 @@ function App() {
         <Route path="/" element={<Main userAgent={userAgent} />} />
         <Route path="/technology" element={<Tech userAgent={userAgent} />} />
       </Routes>
+      <Footer userAgent={userAgent} />
     </BrowserRouter>
   );
 }

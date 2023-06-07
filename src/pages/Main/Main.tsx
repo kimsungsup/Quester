@@ -43,7 +43,6 @@ const Main = ({ userAgent }: Props) => {
               <img src="/assets/main/pc/section1-gradation1.svg" alt="icon" />
             </div>
           )}
-
           <div className="text-section">
             <img src="/assets/common/logo-text.svg" alt="logo" />
             <div className="text">

@@ -2,13 +2,16 @@
   .mb {
     display: none;
   }
+
   .tablet {
     display: none;
   }
+
   .main-page {
     span {
       font-weight: 700;
     }
+
     .main-section {
       z-index: 10;
       position: relative;
@@ -28,18 +31,21 @@
         width: 1326px;
         margin: 0 auto;
         height: 100%;
-        & > .title-section {
+
+        &>.title-section {
           .title {
             font-weight: 700;
             font-size: 130px;
             line-height: 100%;
             margin-bottom: 30px;
           }
+
           .subtitle {
             font-weight: 700;
             font-size: 30px;
             line-height: 130%;
           }
+
           .text {
             position: absolute;
             bottom: 99px;
@@ -51,10 +57,12 @@
         }
       }
     }
+
     .main-section1 {
       margin-bottom: 358px;
       position: relative;
       background-color: black;
+
       .gradation-section {
         position: absolute;
         left: -300px;
@@ -69,36 +77,41 @@
         justify-content: space-between;
 
         .text-section {
-          & > img {
+          &>img {
             width: 136px;
             height: 28px;
             margin-bottom: 25px;
             position: relative;
             z-index: 10;
           }
-          & > .text {
+
+          &>.text {
             font-weight: 400;
             font-size: 40px;
             line-height: 140%;
           }
         }
+
         .icon-section {
-          & > img {
+          &>img {
             width: 752px;
             height: 717px;
           }
         }
       }
     }
+
     .main-section2 {
       margin-bottom: 371px;
       position: relative;
-      & > .title {
+
+      &>.title {
         text-align: center;
         font-weight: 700;
         font-size: 100px;
         margin-bottom: 156px;
       }
+
       .line {
         top: 130px;
         left: 50%;
@@ -108,6 +121,7 @@
         height: 248px;
         background-color: white;
       }
+
       .section2-background {
         width: 100%;
         height: 482px;
@@ -121,24 +135,28 @@
 
         text-align: center;
         width: 100%;
-        & > .text {
+
+        &>.text {
           font-weight: 400;
           font-size: 35px;
           line-height: 140%;
         }
       }
     }
+
     .main-section3 {
       width: 1326px;
       margin: 0 auto;
       margin-bottom: 402px;
-      & > .title {
+
+      &>.title {
         text-align: center;
         font-weight: 700;
         font-size: 100px;
         line-height: 100%;
         margin-bottom: 132px;
       }
+
       .section3-content {
         display: flex;
         flex-direction: column;
@@ -159,41 +177,48 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             .icon {
               width: 478px;
               position: absolute;
               bottom: 100px;
               z-index: 2;
             }
+
             .name {
               position: absolute;
               bottom: 50px;
               width: 511px;
             }
           }
+
           .green {
             background-color: #00d9b3;
           }
+
           .right {
-            & > .title {
+            &>.title {
               font-weight: 700;
               font-size: 50px;
               line-height: 100%;
               margin-bottom: 167px;
             }
-            & > .subtitle {
+
+            &>.subtitle {
               height: 120px;
               font-weight: 700;
               font-size: 30px;
               line-height: 133%;
               margin-bottom: 20px;
             }
-            & > .text {
+
+            &>.text {
               font-weight: 400;
               font-size: 18px;
               line-height: 160%;
               margin-bottom: 60px;
             }
+
             .more-btn {
               background-color: transparent;
             }
@@ -201,11 +226,13 @@
         }
       }
     }
+
     .main-section4 {
       margin-bottom: 337px;
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .section4-background {
         width: 100%;
         height: 535px;
@@ -219,25 +246,29 @@
 
         text-align: center;
         width: 100%;
-        & > .text {
+
+        &>.text {
           font-weight: 400;
           font-size: 30px;
           line-height: 140%;
         }
-        & > .title {
+
+        &>.title {
           margin-top: 40px;
           margin-bottom: 55px;
           font-weight: 700;
           font-size: 100px;
         }
       }
+
       .section4-history {
-        & > img {
+        &>img {
           width: 1212px;
           margin-right: 50px;
         }
       }
     }
+
     .main-section5 {
       .section5-background {
         width: 100%;
@@ -252,41 +283,47 @@
         position: relative;
 
         width: 100%;
+
         .title-wrapper {
           display: flex;
           column-gap: 150px;
           align-items: center;
 
-          & > .left {
-            & > .img {
-              & > img {
+          &>.left {
+            &>.img {
+              &>img {
                 top: -80px;
                 position: absolute;
                 width: 103px;
               }
             }
-            & > .title {
+
+            &>.title {
               margin-bottom: 115px;
               font-weight: 700;
               font-size: 100px;
               line-height: 100%;
             }
-            & > .more-btn {
+
+            &>.more-btn {
               background-color: transparent;
               margin-left: 7px;
             }
           }
-          & > .right {
+
+          &>.right {
             display: flex;
             flex-direction: column;
             row-gap: 50px;
+
             .content {
-              & > .title {
+              &>.title {
                 margin-bottom: 5px;
                 font-weight: 700;
                 font-size: 35px;
               }
-              & > .text {
+
+              &>.text {
                 font-weight: 600;
                 font-size: 25px;
               }
@@ -303,47 +340,40 @@
     .main-page {
       .main-section {
         background-image: url(/public/assets/main/pc/main-img.png);
-        background-image: -webkit-image-set(
-          url(/public/assets/main/pc/main-img.png) 1x,
-          url(/public/assets/main/pc/main-img@2x.png) 2x,
-          url(/public/assets/main/pc/main-img@3x.png) 3x
-        );
+        background-image: -webkit-image-set(url(/public/assets/main/pc/main-img.png) 1x,
+            url(/public/assets/main/pc/main-img@2x.png) 2x,
+            url(/public/assets/main/pc/main-img@3x.png) 3x);
       }
 
-      // .main-section1 {
-      //   //   background-image: url(/public/assets/main/pc/section1-overlay.svg);
-      // }
+      .main-section1 {
+        // background-color: black;
+        background-image: url(/public/assets/main/pc/section1-overlay.svg);
+      }
 
       .main-section2 {
         .section2-background {
           background-image: url(/public/assets/main/pc/section2-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section2-img.png) 1x,
-            url(/public/assets/main/pc/section2-img@2x.png) 2x,
-            url(/public/assets/main/pc/section2-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section2-img.png) 1x,
+              url(/public/assets/main/pc/section2-img@2x.png) 2x,
+              url(/public/assets/main/pc/section2-img@3x.png) 3x);
         }
       }
 
       .main-section4 {
         .section4-background {
           background-image: url(/public/assets/main/pc/section4-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section4-img.png) 1x,
-            url(/public/assets/main/pc/section4-img@2x.png) 2x,
-            url(/public/assets/main/pc/section4-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section4-img.png) 1x,
+              url(/public/assets/main/pc/section4-img@2x.png) 2x,
+              url(/public/assets/main/pc/section4-img@3x.png) 3x);
         }
       }
 
       .main-section5 {
         .section5-background {
           background-image: url(/public/assets/main/pc/section5-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section5-img.png) 1x,
-            url(/public/assets/main/pc/section5-img@2x.png) 2x,
-            url(/public/assets/main/pc/section5-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section5-img.png) 1x,
+              url(/public/assets/main/pc/section5-img@2x.png) 2x,
+              url(/public/assets/main/pc/section5-img@3x.png) 3x);
         }
       }
     }
@@ -355,30 +385,33 @@
     .tablet {
       display: block;
     }
+
     .pc {
       display: none;
     }
+
     .main-page {
       .main-section {
         height: 457px;
         background-image: url(/public/assets/main/tablet/main-img.png);
-        background-image: -webkit-image-set(
-          url(/public/assets/main/tablet/main-img.png) 1x,
-          url(/public/assets/main/tablet/main-img@2x.png) 2x,
-          url(/public/assets/main/tablet/main-img@3x.png) 3x
-        );
+        background-image: -webkit-image-set(url(/public/assets/main/tablet/main-img.png) 1x,
+            url(/public/assets/main/tablet/main-img@2x.png) 2x,
+            url(/public/assets/main/tablet/main-img@3x.png) 3x);
 
         .section-wrapper {
           padding-top: 83px;
           width: 687px;
-          & > .title-section {
+
+          &>.title-section {
             .title {
               font-size: 60px;
               margin-bottom: 13px;
             }
+
             .subtitle {
               font-size: 20px;
             }
+
             .text {
               bottom: 52px;
               font-size: 13px;
@@ -390,6 +423,7 @@
 
       .main-section1 {
         margin-bottom: 123px;
+
         .gradation-section {
           display: none;
         }
@@ -398,28 +432,32 @@
           position: relative;
           padding-top: 71px;
           width: 687px;
+
           .gradation-tablet {
             position: absolute;
             left: -190px;
             top: -130px;
-            & > img {
+
+            &>img {
               width: 377px;
               height: 391px;
             }
           }
 
           .text-section {
-            & > img {
+            &>img {
               width: 107px;
               height: 21px;
               margin-bottom: 25px;
             }
-            & > .text {
+
+            &>.text {
               font-size: 20px;
             }
           }
+
           .icon-section {
-            & > img {
+            &>img {
               width: 376px;
               height: 326px;
             }
@@ -427,31 +465,32 @@
         }
       }
 
-      // .main-section1 {
-      //   //   background-image: url(/public/assets/main/pc/section1-overlay.svg);
-      // }
+      .main-section1 {
+        background-image: url(/public/assets/main/pc/section1-overlay.svg);
+      }
 
       .main-section2 {
         margin-bottom: 200px;
+
         .section2-background {
           height: 317px;
           background-image: url(/public/assets/main/pc/section2-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section2-img.png) 1x,
-            url(/public/assets/main/pc/section2-img@2x.png) 2x,
-            url(/public/assets/main/pc/section2-img@3x.png) 3x
-          );
-          & > .text {
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section2-img.png) 1x,
+              url(/public/assets/main/pc/section2-img@2x.png) 2x,
+              url(/public/assets/main/pc/section2-img@3x.png) 3x);
+
+          &>.text {
             font-weight: 400;
             font-size: 20px;
             line-height: 140%;
           }
         }
 
-        & > .title {
+        &>.title {
           font-size: 40px;
           margin-bottom: 93px;
         }
+
         .line {
           top: 80px;
           height: 127px;
@@ -461,11 +500,13 @@
       .main-section3 {
         width: 687px;
         margin-bottom: 267px;
-        & > .title {
+
+        &>.title {
           font-weight: 700;
           font-size: 50px;
           margin-bottom: 62px;
         }
+
         .section3-content {
           row-gap: 64px;
 
@@ -483,6 +524,7 @@
                 width: 266px;
                 bottom: 50px;
               }
+
               .name {
                 bottom: 28px;
                 width: 226px;
@@ -490,16 +532,18 @@
             }
 
             .right {
-              & > .title {
+              &>.title {
                 font-size: 30px;
                 margin-bottom: 78px;
               }
-              & > .subtitle {
+
+              &>.subtitle {
                 height: 50px;
                 font-size: 15px;
                 margin-bottom: 20px;
               }
-              & > .text {
+
+              &>.text {
                 font-size: 13px;
                 margin-bottom: 20px;
               }
@@ -510,24 +554,24 @@
 
       .main-section4 {
         .section4-history {
-          & > img {
+          &>img {
             width: 681px;
             margin-right: 0px;
           }
         }
+
         .section4-background {
           height: 323px;
           background-image: url(/public/assets/main/pc/section4-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section4-img.png) 1x,
-            url(/public/assets/main/pc/section4-img@2x.png) 2x,
-            url(/public/assets/main/pc/section4-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section4-img.png) 1x,
+              url(/public/assets/main/pc/section4-img@2x.png) 2x,
+              url(/public/assets/main/pc/section4-img@3x.png) 3x);
 
-          & > .text {
+          &>.text {
             font-size: 20px;
           }
-          & > .title {
+
+          &>.title {
             font-size: 50px;
           }
         }
@@ -538,45 +582,48 @@
           padding-top: 46px;
           height: 318px;
           background-image: url(/public/assets/main/pc/section5-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section5-img.png) 1x,
-            url(/public/assets/main/pc/section5-img@2x.png) 2x,
-            url(/public/assets/main/pc/section5-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section5-img.png) 1x,
+              url(/public/assets/main/pc/section5-img@2x.png) 2x,
+              url(/public/assets/main/pc/section5-img@3x.png) 3x);
 
           .title-wrapper {
             display: flex;
             column-gap: 86px;
             align-items: center;
 
-            & > .left {
-              & > .img {
-                & > img {
+            &>.left {
+              &>.img {
+                &>img {
                   top: -30px;
                   width: 41px;
                 }
               }
-              & > .title {
+
+              &>.title {
                 margin-bottom: 85px;
                 font-weight: 700;
                 font-size: 50px;
                 line-height: 100%;
               }
-              & > .more-btn {
+
+              &>.more-btn {
                 background-color: transparent;
                 margin-left: 7px;
               }
             }
-            & > .right {
+
+            &>.right {
               display: flex;
               flex-direction: column;
               row-gap: 30px;
+
               .content {
-                & > .title {
+                &>.title {
                   margin-bottom: 5px;
                   font-size: 20px;
                 }
-                & > .text {
+
+                &>.text {
                   font-size: 15px;
                 }
               }
@@ -593,30 +640,33 @@
     .mb {
       display: block;
     }
+
     .tablet {
       display: none;
     }
+
     .main-page {
       .main-section {
         height: 611px;
         background-image: url(/public/assets/main/mb/main-img.png);
-        background-image: -webkit-image-set(
-          url(/public/assets/main/mb/main-img.png) 1x,
-          url(/public/assets/main/mb/main-img@2x.png) 2x,
-          url(/public/assets/main/mb/main-img@3x.png) 3x
-        );
+        background-image: -webkit-image-set(url(/public/assets/main/mb/main-img.png) 1x,
+            url(/public/assets/main/mb/main-img@2x.png) 2x,
+            url(/public/assets/main/mb/main-img@3x.png) 3x);
 
         .section-wrapper {
           padding-top: 87px;
           width: 328px;
-          & > .title-section {
+
+          &>.title-section {
             .title {
               font-size: 50px;
               margin-bottom: 8px;
             }
+
             .subtitle {
               font-size: 20px;
             }
+
             .text {
               bottom: 83px;
               font-size: 13px;
@@ -629,6 +679,7 @@
 
       .main-section1 {
         margin-bottom: 104px;
+
         .gradation-section {
           display: none;
         }
@@ -638,10 +689,12 @@
           flex-direction: column;
           padding-top: 116px;
           width: 360px;
+
           .gradation-tablet {
             left: -0px;
             top: -70px;
-            & > img {
+
+            &>img {
               width: 184px;
               height: 191px;
             }
@@ -651,17 +704,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            & > img {
+
+            &>img {
               width: 107px;
               height: 21px;
               margin-bottom: 25px;
             }
-            & > .text {
+
+            &>.text {
               text-align: center;
             }
           }
+
           .icon-section {
-            & > img {
+            &>img {
               width: 290px;
               height: 264px;
             }
@@ -673,20 +729,20 @@
         .section2-background {
           height: 331px;
           background-image: url(/public/assets/main/mb/section2-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/mb/section2-img.png) 1x,
-            url(/public/assets/main/mb/section2-img@2x.png) 2x,
-            url(/public/assets/main/mb/section2-img@3x.png) 3x
-          );
-          & > .text {
+          background-image: -webkit-image-set(url(/public/assets/main/mb/section2-img.png) 1x,
+              url(/public/assets/main/mb/section2-img@2x.png) 2x,
+              url(/public/assets/main/mb/section2-img@3x.png) 3x);
+
+          &>.text {
             font-size: 18px;
           }
         }
 
-        & > .title {
+        &>.title {
           font-size: 40px;
           margin-bottom: 93px;
         }
+
         .line {
           top: 80px;
           height: 127px;
@@ -697,12 +753,15 @@
         width: 328px;
         margin: 0 auto;
         margin-bottom: 154px;
-        & > .title {
+
+        &>.title {
           font-size: 50px;
           margin-bottom: 51px;
         }
+
         .section3-content {
           row-gap: 154px;
+
           .box-wrapper {
             width: 328px;
             display: flex;
@@ -718,29 +777,35 @@
                 width: 261px;
                 bottom: 50px;
               }
+
               .name {
                 bottom: 20px;
                 width: 281px;
               }
             }
+
             .green {
               background-color: #00d9b3;
             }
+
             .right {
-              & > .title {
+              &>.title {
                 font-size: 30px;
                 margin-bottom: 28px;
               }
-              & > .subtitle {
+
+              &>.subtitle {
                 height: 60px;
                 font-size: 15px;
                 line-height: 133%;
                 margin-bottom: 20px;
               }
-              & > .text {
+
+              &>.text {
                 font-size: 13px;
                 margin-bottom: 20px;
               }
+
               .more-btn {
                 background-color: transparent;
               }
@@ -751,22 +816,22 @@
 
       .main-section4 {
         margin-bottom: 220px;
+
         .section4-history {
-          & > img {
+          &>img {
             width: 328px;
             margin-right: 80px;
           }
         }
+
         .section4-background {
           height: 360px;
           background-image: url(/public/assets/main/pc/section4-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/pc/section4-img.png) 1x,
-            url(/public/assets/main/pc/section4-img@2x.png) 2x,
-            url(/public/assets/main/pc/section4-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/pc/section4-img.png) 1x,
+              url(/public/assets/main/pc/section4-img@2x.png) 2x,
+              url(/public/assets/main/pc/section4-img@3x.png) 3x);
 
-          & > .text {
+          &>.text {
             font-size: 18px;
           }
         }
@@ -777,11 +842,9 @@
           padding-top: 36px;
           height: 500px;
           background-image: url(/public/assets/main/mb/section5-img.png);
-          background-image: -webkit-image-set(
-            url(/public/assets/main/mb/section5-img.png) 1x,
-            url(/public/assets/main/mb/section5-img@2x.png) 2x,
-            url(/public/assets/main/mb/section5-img@3x.png) 3x
-          );
+          background-image: -webkit-image-set(url(/public/assets/main/mb/section5-img.png) 1x,
+              url(/public/assets/main/mb/section5-img@2x.png) 2x,
+              url(/public/assets/main/mb/section5-img@3x.png) 3x);
 
           .title-wrapper {
             width: 328px;
@@ -791,31 +854,35 @@
             column-gap: 86px;
             align-items: center;
 
-            & > .left {
-              & > .img {
-                & > img {
+            &>.left {
+              &>.img {
+                &>img {
                   top: -30px;
                   width: 41px;
                   left: 50%;
                   transform: translate(-50%, 0%);
                 }
               }
-              & > .title {
+
+              &>.title {
                 margin-bottom: 46px;
                 font-weight: 700;
                 font-size: 50px;
                 line-height: 100%;
               }
-              & > .more-btn {
+
+              &>.more-btn {
                 display: none;
               }
             }
-            & > .right {
+
+            &>.right {
               text-align: center;
               display: flex;
               flex-direction: column;
               align-items: center;
               row-gap: 30px;
+
               .content {
                 margin-bottom: 20px;
               }

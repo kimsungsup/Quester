@@ -341,6 +341,9 @@
     background-image: url(/public/assets/main/pc/main-img.png);
     background-image: -webkit-image-set(url(/public/assets/main/pc/main-img.png) 1x, url(/public/assets/main/pc/main-img@2x.png) 2x, url(/public/assets/main/pc/main-img@3x.png) 3x);
   }
+  #root .main-page .main-section1 {
+    background-image: url(/public/assets/main/pc/section1-overlay.svg);
+  }
   #root .main-page .main-section2 .section2-background {
     background-image: url(/public/assets/main/pc/section2-img.png);
     background-image: -webkit-image-set(url(/public/assets/main/pc/section2-img.png) 1x, url(/public/assets/main/pc/section2-img@2x.png) 2x, url(/public/assets/main/pc/section2-img@3x.png) 3x);
@@ -413,6 +416,9 @@
   #root .main-page .main-section1 .wrapper .icon-section > img {
     width: 376px;
     height: 326px;
+  }
+  #root .main-page .main-section1 {
+    background-image: url(/public/assets/main/pc/section1-overlay.svg);
   }
   #root .main-page .main-section2 {
     margin-bottom: 200px;

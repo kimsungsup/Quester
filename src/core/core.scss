@@ -5,12 +5,33 @@ main {
   color: white;
 }
 
-// @font-face {
-//   font-family: "Cinzel";
-//   font-weight: 700;
-//   font-display: swap;
-//   src: local("Cinzel Bold"), url("./woff/Cinzel-Bold.otf") format("woff");
-// }
+@font-face {
+  font-family: "stratum2";
+  font-weight: 700;
+  font-display: swap;
+  src: local("GemunuLibre Bold"),
+    url("./woff/stratum2-bold-webfont.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "gmarket";
+  font-weight: 700;
+  font-display: swap;
+  src: local("GemunuLibre Bold"),
+    url("./woff/GmarketSansTTFBold.ttf") format("woff");
+}
+
+.font {
+  font-family: "stratum2", sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gmarket {
+  font-family: "gmarket", sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}
 
 #root {
   width: 100%;

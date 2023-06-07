@@ -22,6 +22,12 @@
 #root header > .wrapper > .navbar .logo-link > img {
   width: 149px;
 }
+#root .black {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: #545454;
+  border-bottom: 1px solid #949494;
+}
 #root .mb-header {
   z-index: 400;
   -webkit-transition: top 0.2s ease-in-out;

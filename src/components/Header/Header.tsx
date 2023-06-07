@@ -32,8 +32,8 @@ const Header = ({ userAgent }: Props) => {
 
   return (
     <>
-      <header>
-        <div className="wrapper">
+      <header className={HeaderState}>
+        <div className={`wrapper`}>
           <div className="navbar">
             <Link to="/" className="logo-link">
               <img src="/assets/common/logo.svg" alt="quester" />
@@ -42,7 +42,7 @@ const Header = ({ userAgent }: Props) => {
               <div className="pc-nav-wrapper">
                 {layout.map(({ title, link }, idx) => {
                   return (
-                    <Link to={link} key={idx} className="pc-nav">
+                    <Link to={link} key={idx} className="pc-nav gmarket">
                       {title}
                     </Link>
                   );

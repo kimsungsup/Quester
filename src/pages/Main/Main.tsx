@@ -67,9 +67,15 @@ const Main = ({ userAgent }: Props) => {
         <div className="line"></div>
         <div className="section2-background">
           <div className="text">
-            가상 현실은 차원을 뛰어넘어 사람들의 <span>문화와 여가,</span>
+            가상 현실은 차원을 뛰어넘어 사 <br className="mb" />
+            람들의 <span>문화와 여가,</span>
             <br /> <span>교육과 산업 그 모든 분야</span>를 <br />
-            <span> 혁신적으로 확장시키고, 변화</span>시킬 것입니다
+            <span>
+              {" "}
+              혁신적으로 확장시키고,
+              <br className="mb" /> 변화
+            </span>
+            시킬 것입니다
           </div>
         </div>
       </div>
@@ -137,7 +143,7 @@ const Main = ({ userAgent }: Props) => {
                 <img src="/assets/common/contact-us.svg" alt="" />
               </div>
               <div className="title font">
-                CONTACT <br />
+                CONTACT <br className="pc" /> <br className="tablet" />
                 US
               </div>
               <button className="more-btn">
@@ -148,7 +154,8 @@ const Main = ({ userAgent }: Props) => {
               <div className="content">
                 <div className="title font">ADDRESS</div>
                 <div className="text">
-                  대구광역시 달성군 현풍읍 테크노중앙대로 333, R7 (산학협력관)
+                  대구광역시 달성군 현풍읍
+                  <br className="mb" /> 테크노중앙대로 333, R7 (산학협력관)
                 </div>
               </div>
               <div className="content">
@@ -160,6 +167,14 @@ const Main = ({ userAgent }: Props) => {
                 <div className="title font">E-MAIL</div>
                 <div className="text">quester@quester.kr</div>
               </div>
+
+              {userAgent === "mb" ? (
+                <button className="more-mb">
+                  <img src="/assets/common/more.svg" about="btn" />
+                </button>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>

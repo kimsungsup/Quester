@@ -7,6 +7,7 @@ import Tech from "./pages/Tech/Tech";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import Education from "./pages/Education/Education";
+import ScrollTop from "./components/ScrollTop/ScrollTop";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
@@ -44,6 +45,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header userAgent={userAgent} />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Main userAgent={userAgent} />} />
         <Route path="/technology" element={<Tech userAgent={userAgent} />} />

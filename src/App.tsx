@@ -4,6 +4,7 @@ import { UserAgentType } from "./common/common.inerface";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Header from "./components/Header/Header";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
@@ -43,6 +44,7 @@ function App() {
       <Header userAgent={userAgent} />
       <Routes>
         <Route path="/" element={<Main userAgent={userAgent} />} />
+        <Route path="/contact" element={<Contact userAgent={userAgent} />} />
       </Routes>
     </BrowserRouter>
   );

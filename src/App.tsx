@@ -5,6 +5,8 @@ import Main from "./pages/Main/Main";
 import Header from "./components/Header/Header";
 import Tech from "./pages/Tech/Tech";
 import Footer from "./components/Footer/Footer";
+import Contact from "./pages/Contact/Contact";
+import Education from "./pages/Education/Education";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
@@ -45,6 +47,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Main userAgent={userAgent} />} />
         <Route path="/technology" element={<Tech userAgent={userAgent} />} />
+        <Route path="/contact" element={<Contact userAgent={userAgent} />} />
+        <Route
+          path="/education"
+          element={<Education userAgent={userAgent} />}
+        />
       </Routes>
       <Footer userAgent={userAgent} />
     </BrowserRouter>

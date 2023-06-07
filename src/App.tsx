@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
 import { UserAgentType } from "./common/common.inerface";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Header from "./components/Header/Header";
+import Tech from "./pages/Tech/Tech";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
@@ -43,6 +43,7 @@ function App() {
       <Header userAgent={userAgent} />
       <Routes>
         <Route path="/" element={<Main userAgent={userAgent} />} />
+        <Route path="/technology" element={<Tech userAgent={userAgent} />} />
       </Routes>
     </BrowserRouter>
   );

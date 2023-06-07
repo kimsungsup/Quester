@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./css/index.css";
 import { UserAgentType } from "../../common/common.inerface";
+import { Link } from "react-router-dom";
 
 type Props = {
   userAgent: UserAgentType;
@@ -105,7 +106,9 @@ const Main = ({ userAgent }: Props) => {
                   <div className="text">{item.text}</div>
 
                   <button className="more-btn">
-                    <img src="/assets/common/more.svg" alt="" />
+                    <Link to={item.link}>
+                      <img src="/assets/common/more.svg" alt="" />
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -147,7 +150,9 @@ const Main = ({ userAgent }: Props) => {
                 US
               </div>
               <button className="more-btn">
-                <img src="/assets/common/more.svg" about="btn" />
+                <Link to="/contact">
+                  <img src="/assets/common/more.svg" about="btn" />
+                </Link>
               </button>
             </div>
             <div className="right">
@@ -170,7 +175,9 @@ const Main = ({ userAgent }: Props) => {
 
               {userAgent === "mb" ? (
                 <button className="more-mb">
-                  <img src="/assets/common/more.svg" about="btn" />
+                  <Link to="/contact">
+                    <img src="/assets/common/more.svg" about="btn" />
+                  </Link>
                 </button>
               ) : (
                 ""
@@ -214,6 +221,7 @@ const section3 = [
         보여줍니다.
       </>
     ),
+    link: "/technology",
   },
 
   {
@@ -240,5 +248,7 @@ const section3 = [
         기존 실험 교육의 매커니즘을 혁신합니다.
       </>
     ),
+
+    link: "/education",
   },
 ];

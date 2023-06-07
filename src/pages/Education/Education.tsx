@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./css/index.css";
 import { UserAgentType } from "../../common/common.inerface";
 import Partnea from "../../components/Partner/Partner";
@@ -85,8 +85,7 @@ const Education = ({ userAgent }: Props) => {
             교육적 효과가 높은 콘텐츠만을 개발합니다
           </div>
         </div>
-
-        {/* <Partnea /> */}
+        <Partnea />
       </div>
     </main>
   );

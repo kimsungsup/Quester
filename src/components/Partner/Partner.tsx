@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./css/index.css";
-import { UserAgentType } from "../../common/common.inerface";
 
 const Partnea = () => {
   return (
@@ -9,7 +8,14 @@ const Partnea = () => {
         {partnea.map((item, idx) => {
           return (
             <div key={idx} className="box">
-              <img src={item} about="" />
+              <img src={item} alt="" />
+            </div>
+          );
+        })}
+        {partnea.map((item, idx) => {
+          return (
+            <div key={idx} className="box">
+              <img src={item} alt="" />
             </div>
           );
         })}

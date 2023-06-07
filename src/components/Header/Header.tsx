@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "./css/index.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { UserAgentType } from "../../common/common.inerface";
 type Props = {
   userAgent: UserAgentType;

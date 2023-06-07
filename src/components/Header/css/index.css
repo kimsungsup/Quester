@@ -7,6 +7,7 @@
   background-color: transparent;
 }
 #root header > .wrapper {
+  z-index: 10;
   height: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -15,6 +16,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #root header > .wrapper > .navbar .logo-link {
   height: 32px;
@@ -22,16 +26,21 @@
 #root header > .wrapper > .navbar .logo-link > img {
   width: 149px;
 }
+#root header > .wrapper > .right > button {
+  background-color: transparent;
+}
+#root .open {
+  background-color: black;
+}
 #root .black {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  background-color: #545454;
-  border-bottom: 1px solid #949494;
+  background-color: black;
 }
 #root .mb-header {
   z-index: 400;
-  -webkit-transition: top 0.2s ease-in-out;
-  transition: top 0.2s ease-in-out;
+  -webkit-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   position: fixed;
   top: -100%;
   left: 0;
@@ -52,8 +61,8 @@
 #root .mb-header .mb-menu {
   width: 100%;
   color: white;
-  padding: 20px 0;
-  border-bottom: solid 1px var(--gray500);
+  padding: 23px 0;
+  border-bottom: solid 1px #727272;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +73,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 23px;
 }
 #root > .open-header {
   top: 62px;
@@ -112,7 +121,7 @@
     height: 62px;
   }
   #root header .wrapper {
-    width: 768px;
+    width: 100%;
     padding: 0 40px;
   }
 }

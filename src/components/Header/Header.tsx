@@ -2,8 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import "./css/index.css";
 import { Link, useLocation } from "react-router-dom";
 import { UserAgentType } from "../../common/common.inerface";
-import { useDispatch, useSelector } from "react-redux";
-
 type Props = {
   userAgent: UserAgentType;
 };

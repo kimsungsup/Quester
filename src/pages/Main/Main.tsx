@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./css/index.css";
 import { UserAgentType } from "../../common/common.inerface";
 import { Link } from "react-router-dom";
@@ -151,7 +151,7 @@ const Main = ({ userAgent }: Props) => {
               </div>
               <button className="more-btn">
                 <Link to="/contact">
-                  <img src="/assets/common/more.svg" about="btn" />
+                  <img src="/assets/common/more.svg" alt="btn" />
                 </Link>
               </button>
             </div>
@@ -176,7 +176,7 @@ const Main = ({ userAgent }: Props) => {
               {userAgent === "mb" ? (
                 <button className="more-mb">
                   <Link to="/contact">
-                    <img src="/assets/common/more.svg" about="btn" />
+                    <img src="/assets/common/more.svg" alt="btn" />
                   </Link>
                 </button>
               ) : (

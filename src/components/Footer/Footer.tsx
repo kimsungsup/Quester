@@ -26,7 +26,7 @@ const Footer = ({ userAgent }: Props) => {
             </div>
 
             <div className="footer-list">
-              {layouts.map(({ img, content, engcontent }, idx) => {
+              {layouts.map(({ img, content }, idx) => {
                 return (
                   <div key={idx} className="list-content">
                     <div className="list-img">
@@ -56,26 +56,14 @@ const layouts = [
         용지로169번길 11-31, 제3층(동진빌딩) (용호동)
       </>
     ),
-
-    engcontent: (
-      <>
-        Head Office | 3F, 232, Alphacity 1-ro, Suseong-gu, Daegu, Republic of
-        Korea <br className="tablet" /> Changwon Branch | 11-31, Yongji-ro
-        169beon-gil, <br className="tablet" />
-        Seongsan-gu, Changwon-si, Gyeongsangnam-do, Republic of Korea
-      </>
-    ),
   },
 
   {
     img: "tel",
     content: "Tel. 070-8740-5534  |  Fax. 070-8740-1730",
-
-    engcontent: "Tel. 070-8740-5534  |  Fax. 070-8740-1730",
   },
   {
     img: "mail",
     content: "ceo@igis.co.kr",
-    engcontent: "ceo@igis.co.kr",
   },
 ];

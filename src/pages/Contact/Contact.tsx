@@ -11,7 +11,7 @@ const Contact = ({ userAgent }: Props) => {
   return (
     <main className="contact-page">
       <div className="background">
-        <div className="title">CONTACT US</div>
+        <div className="title font">CONTACT US</div>
       </div>
 
       <div className="contact">

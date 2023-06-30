@@ -79,7 +79,7 @@ const Education = ({ userAgent }: Props) => {
 
       <div className="section3">
         <div className="title-wrapper">
-          <div className="title font">PARTNEA</div>
+          <div className="title font">PARTNER</div>
           <div className="text">
             퀘스터는 교육 현장과 소통하며 <br />
             교육적 효과가 높은 콘텐츠만을 개발합니다
@@ -120,24 +120,23 @@ const section2 = [
 
   {
     img: "/assets/education/pc/icon3.svg",
-    title: "현실적인 실험",
-    text: (
-      <>
-        자체 개발한 가상 화학반응 엔진 및 가상 실험 기구 간 상호작용 알고리즘을
-        소프트웨어 내에 탑재하여 개인 별 실험 결과의 오차를 구현하는 등 콘텐츠의
-        자유도를 높여 현실적인 실험이 가능하도록 구성하였습니다.
-      </>
-    ),
-  },
-
-  {
-    img: "/assets/education/pc/icon4.svg",
     title: "물리적 제약 극복",
     text: (
       <>
         평소 사용하기 어려운 고가의 실험 기구 및 고위험군 화학 물질들을 가상
         공간 속에서 유연하게 다룰 수 있어 학생들에게 소중한 교육 경험을
         제공합니다.
+      </>
+    ),
+  },
+
+  {
+    img: "/assets/education/pc/icon4.svg",
+    title: "효율적인 학생 관리 및 수업 운영",
+    text: (
+      <>
+        가상 공간 내 학생 관리 화면과 자동 실험 평가 기능을 비롯한 각종 LMS
+        시스템 개발을 하여 교수자의 효율적인 수업 운영을 도와드립니다.
       </>
     ),
   },

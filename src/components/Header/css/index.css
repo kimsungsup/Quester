@@ -37,6 +37,11 @@
   transition: 0.3s ease-in-out;
   background-color: black;
 }
+#root .education {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
 #root .mb-header {
   z-index: 400;
   -webkit-transition: top 0.3s ease-in-out;
@@ -114,6 +119,9 @@
     font-weight: 700;
     font-size: 16px;
     color: white;
+  }
+  #root header > .wrapper > .navbar .pc-nav-wrapper .education {
+    color: #283063;
   }
 }
 @media screen and (max-width: 1439px) and (min-width: 768px) {

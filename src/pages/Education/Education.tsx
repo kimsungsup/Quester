@@ -2,6 +2,7 @@ import React from "react";
 import "./css/index.css";
 import { UserAgentType } from "../../common/common.inerface";
 import Partnea from "../../components/Partner/Partner";
+import Educationsilde from "../../components/education/Educationsilde";
 
 type Props = {
   userAgent: UserAgentType;
@@ -11,66 +12,69 @@ const Education = ({ userAgent }: Props) => {
   return (
     <main className="education-page">
       <div className="section">
-        <div className="background">
-          <div className="title font">
-            PLAY THE LAB,
-            <br /> PLAB
-          </div>
-          <div className="text">
-            이공계 융복합 인재 양성을 위한 <br /> 최선의 실험 교육 플랫폼
+        <div className="left">
+          <img src="/assets/education/pc/plab.svg" alt="" />
+          <div className="title">
+            가상 실험실의 세계로 <br />
+            PLAY THE LAB, <br /> PLAB과 함께 하세요
           </div>
 
-          <div className="line"></div>
+          <button className="contact">
+            <div className="text">문의하기 바로가기</div>
+            <img src="/assets/common/arrow.svg" alt="" />
+          </button>
+        </div>
+
+        <div className="right">
+          <img src="/assets/education/pc/computer.png" alt="" />
+        </div>
+
+        <div className="back">
+          <img src="/assets/education/pc/section-back.svg" alt="" />
         </div>
       </div>
 
       <div className="section1">
         <div className="wrapper">
-          <div className="character">
-            <img src="/assets/education/pc/character.svg" alt="character" />
-          </div>
-          <div className="plab">
-            <img src="/assets/education/pc/plab.svg" alt="icon" />
-          </div>
-          <div className="title">
-            PLAB은 현실적인 가상 실험
-            <br className="mb" />
-            (Realistic Virtual Experiment) <br />
-            소프트웨어로, <br className="mb" />
-            높은 자유도의 가상 실험 콘텐츠를 구현하여 <br />
-            기존 실험 교육의 매커니즘을 혁신합니다
-          </div>
+          <img src="/assets/education/pc/logo.svg" alt="" />
 
           <div className="text">
-            퀘스터의 가상 실험 소프트웨어는 <br className="mb" /> LMS 시스템이
-            탑재된 교육 플랫폼 내 <br />
-            가상 실험 교육 콘텐츠를 제공하며 전용 컨트롤러도{" "}
-            <br className="mb" /> 기존 실험 수업을 효과적으로 대체할 수
-            있습니다.
+            이제껏 경험해보지 못한 <br />
+            새로운 과학 교육 콘텐츠
+          </div>
+
+          <div className="sub">
+            실험실에서 직접 실험하는 것과 같은 높은 수준의 자유도 <br /> PLAB의
+            가상 실험과 함께라면 우리의 교육이 새로워질 거예요
           </div>
         </div>
       </div>
 
       <div className="section2">
-        <div className="title font">
-          ABOUT <br />
-          SERVICE
+        <div className="title-wrapper">
+          <div className="title">POINT 01</div>
+          <div className="text">
+            플랩은 학생들을 위해 <br />더 나은 과학교육을 고민하고 연구합니다
+          </div>
+          <div className="sub">
+            플랩은 가상 실험을 통해 혁신적이고 <br />
+            주도적인 과학 교육을 추구하고자 합니다
+          </div>
         </div>
 
-        <div className="content">
+        <div className="wrapper">
           {section2.map((item, idx) => {
             return (
-              <div key={idx} className={`box ${item.type}`}>
-                <div className="img ">
-                  <img src={item.img} alt="icon" />
+              <div key={idx} className={`box-wrapper ${item.type}`}>
+                <div className="left">
+                  <div className="number">{item.number}</div>
+                  <div className="title">{item.title}</div>
+                  <div className="text">{item.text}</div>
                 </div>
 
-                <div className="gradation">
-                  <img src={item.img} alt="icon" />
+                <div className="right">
+                  <img src={item.img} srcSet={item.srcSet} alt="" />
                 </div>
-
-                <div className="title">{item.title}</div>
-                <div className="text">{item.text}</div>
               </div>
             );
           })}
@@ -79,13 +83,17 @@ const Education = ({ userAgent }: Props) => {
 
       <div className="section3">
         <div className="title-wrapper">
-          <div className="title font">PARTNEA</div>
-          <div className="text">
-            퀘스터는 교육 현장과 소통하며 <br />
-            교육적 효과가 높은 콘텐츠만을 개발합니다
+          <div className="title">POINT 02</div>
+          <div className="text">검증된 교육 효과를 경험해보세요</div>
+          <div className="sub">
+            학생들이 안전하고 주체적으로 <br />
+            실험할 수 있는 플랩의 가상 실험실
           </div>
         </div>
-        <Partnea />
+
+        <div className="wrapper">
+          <Educationsilde />
+        </div>
       </div>
     </main>
   );
@@ -95,69 +103,64 @@ export default Education;
 
 const section2 = [
   {
-    img: "/assets/education/pc/icon1.svg",
-    title: "현실적인 실험",
-    text: (
-      <>
-        자체 개발한 가상 화학반응 엔진 및 가상 실험 기구 간 상호작용 알고리즘을
-        소프트웨어 내에 탑재하여 개인 별 실험 결과의 오차를 구현하는 등 콘텐츠의
-        자유도를 높여 현실적인 실험이 가능하도록 구성하였습니다.
-      </>
-    ),
-  },
-
-  {
-    img: "/assets/education/pc/icon2.svg",
-    title: "안전한 실험",
-    text: (
-      <>
-        가상 공간 속에서의 실험 진행으로 실제 실험 중 발생 가능한 여러 위험
-        상황들을 차단하고, 안전 사고의 우려로 인해 현실에서 하기 힘든 실험도
-        자유롭게 진행할 수 있습니다.
-      </>
-    ),
-  },
-
-  {
-    img: "/assets/education/pc/icon3.svg",
-    title: "현실적인 실험",
-    text: (
-      <>
-        자체 개발한 가상 화학반응 엔진 및 가상 실험 기구 간 상호작용 알고리즘을
-        소프트웨어 내에 탑재하여 개인 별 실험 결과의 오차를 구현하는 등 콘텐츠의
-        자유도를 높여 현실적인 실험이 가능하도록 구성하였습니다.
-      </>
-    ),
-  },
-
-  {
-    img: "/assets/education/pc/icon4.svg",
-    title: "물리적 제약 극복",
-    text: (
-      <>
-        평소 사용하기 어려운 고가의 실험 기구 및 고위험군 화학 물질들을 가상
-        공간 속에서 유연하게 다룰 수 있어 학생들에게 소중한 교육 경험을
-        제공합니다.
-      </>
-    ),
-  },
-
-  {
-    img: "/assets/education/pc/icon5.svg",
+    img: "/assets/education/pc/section2-01.png",
+    srcSet:
+      "/assets/education/pc/section2-01@2x.png 2x, /assets/education/pc/section2-01@3x.png 3x",
     title: (
       <>
-        높은 몰입도를 통한
-        <br className="mb" /> 학습자의 흥미 유발
+        실험의 주인이 <br />
+        직접 되어볼 수 있어요
       </>
     ),
+    number: "01",
     text: (
       <>
-        퀘스터의 가상 실험 소프트웨어는 학습자가 소프트웨어의 조작 방식을 선택할
-        수 있습니다. 전용 핸드 트래킹 컨트롤러를 활용하여 보다 실감나는 실험과
-        높은 몰입도 제공이 가능해 학습자의 흥미를 유발하기에 효과적입니다.
+        정해진 순서와 방법만을 따라가며 진행해야 했던 <br />
+        기존 시뮬레이션 콘텐츠와 달리, <br />
+        PLAB은 학생들이 주체적으로 실험을 할 수 있어요
+      </>
+    ),
+  },
+
+  {
+    img: "/assets/education/pc/section2-02.png",
+    srcSet:
+      "/assets/education/pc/section2-02@2x.png 2x, /assets/education/pc/section2-02@3x.png 3x",
+    title: (
+      <>
+        평소에 접하기 어려웠던 <br />
+        실험 기구를 만나보세요
+      </>
+    ),
+    number: "02",
+    text: (
+      <>
+        PLAB에서는 평소 접하기 어려운 고가의 실험 기구를 <br />
+        조작할 수 있으며, 위험한 실험도 진행할 수 있어요 <br />
+        학생들의 창의성과 탐구심을 자극하는 다양한 경험을 제공해보세요 <br />
       </>
     ),
 
     type: "last",
+  },
+
+  {
+    img: "/assets/education/pc/section2-03.png",
+    srcSet:
+      "/assets/education/pc/section2-03@2x.png 2x, /assets/education/pc/section2-03@3x.png 3x",
+    title: (
+      <>
+        실험의 주인이 <br />
+        직접 되어볼 수 있어요
+      </>
+    ),
+    number: "03",
+    text: (
+      <>
+        정해진 순서와 방법만을 따라가며 진행해야 했던 <br />
+        기존 시뮬레이션 콘텐츠와 달리, <br />
+        PLAB은 학생들이 주체적으로 실험을 할 수 있어요
+      </>
+    ),
   },
 ];

@@ -11,21 +11,6 @@ const QuestionDetail = ({
   data: { phone, email, timestamp, text, name, job, team, Route },
 }: Props) => {
   const navigate = useNavigate();
-  const LinkDown = useCallback((name: string, link: string) => {
-    var xhr = new XMLHttpRequest();
-    xhr.responseType = "blob";
-    xhr.onload = (event) => {
-      var blob = URL.createObjectURL(xhr.response);
-      var link = document.createElement("a");
-      link.href = blob;
-      link.download = name;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    };
-    xhr.open("GET", link);
-    xhr.send();
-  }, []);
 
   const layouts = [
     {

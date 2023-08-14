@@ -34,6 +34,7 @@ const ListTable = ({
   Remove,
   headers,
 }: Props) => {
+  console.log(data);
   const navigate = useNavigate();
   const CsvRef = useRef<
     CSVLink & HTMLAnchorElement & { link: HTMLAnchorElement }
@@ -56,7 +57,7 @@ const ListTable = ({
     },
     [CheckList]
   );
-  console.log(AllCheck);
+
   const CsvGet = useCallback(async () => {
     const csvd = data
       .filter((item) => CheckList.includes(item.key))
@@ -90,8 +91,8 @@ const ListTable = ({
   useEffect(() => {
     if (AllCheck) {
       setCheckList(
-        data.map(({ id }) => {
-          return id;
+        data.map(({ key }) => {
+          return key;
         })
       );
     } else {

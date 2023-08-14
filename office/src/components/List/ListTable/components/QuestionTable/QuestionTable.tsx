@@ -42,7 +42,7 @@ const QuestionTable = ({
         </div>
       </div>
       {data.map((item, idx) => {
-        const { name, phone, email, timestamp, Route, job, key, team } = item;
+        const { name, phone, email, timestamp, job, key, team } = item;
         return (
           <div key={idx} className="table-card">
             <div className="card-content">

@@ -15,5 +15,5 @@ export interface QuestionInter {
   job: string;
   team: string;
   key: string;
-  id: number;
+  id: string;
 }

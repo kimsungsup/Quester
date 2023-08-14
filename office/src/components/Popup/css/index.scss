@@ -1,0 +1,59 @@
+#root {
+  .popup-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+    .delete-popup {
+      padding: 32px 32px 17px 32px;
+      background-color: white;
+      border-radius: 10px;
+      text-align: center;
+      box-sizing: unset;
+
+      &>.title {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      &>.sub {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+        color: var(--gray500);
+        margin: 8px 0 16px;
+      }
+
+      &>.btn-wrapper {
+        display: grid;
+        grid-template-columns: 256px;
+
+        row-gap: 8px;
+
+        &>button {
+          font-weight: 700;
+          font-size: 16px;
+          height: 50px;
+          border-radius: 5px;
+        }
+
+        &>.trans-btn {
+          color: var(--gray400);
+          background-color: transparent;
+        }
+
+        &>.main-btn {
+          background-color: var(--main);
+          color: white;
+        }
+      }
+    }
+  }
+}

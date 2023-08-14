@@ -1,0 +1,56 @@
+#root .popup-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+#root .popup-section .delete-popup {
+  padding: 32px 32px 17px 32px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+#root .popup-section .delete-popup > .title {
+  font-weight: 700;
+  font-size: 18px;
+}
+#root .popup-section .delete-popup > .sub {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--gray500);
+  margin: 8px 0 16px;
+}
+#root .popup-section .delete-popup > .btn-wrapper {
+  display: grid;
+  grid-template-columns: 256px;
+  row-gap: 8px;
+}
+#root .popup-section .delete-popup > .btn-wrapper > button {
+  font-weight: 700;
+  font-size: 16px;
+  height: 50px;
+  border-radius: 5px;
+}
+#root .popup-section .delete-popup > .btn-wrapper > .trans-btn {
+  color: var(--gray400);
+  background-color: transparent;
+}
+#root .popup-section .delete-popup > .btn-wrapper > .main-btn {
+  background-color: var(--main);
+  color: white;
+}

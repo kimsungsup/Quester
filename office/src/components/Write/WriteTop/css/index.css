@@ -1,0 +1,66 @@
+#root .write-top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 27px;
+}
+#root .write-top-section > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+#root .write-top-section > .left > .back-btn {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+}
+#root .write-top-section > .left > .title {
+  font-weight: 700;
+  font-size: 20px;
+}
+#root .write-top-section > .left > .subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  color: #1963e8;
+  margin-top: 5px;
+}
+#root .write-top-section > .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+#root .write-top-section > .right > button {
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 5px;
+}
+#root .write-top-section > .right > .main-btn {
+  background-color: #1963e8;
+  color: white;
+}
+#root .write-top-section > .right > .grey-btn {
+  background-color: var(--gray200);
+}
+#root .write-top-section > .right > .save-btn {
+  background-color: var(--gray600);
+  color: white;
+}

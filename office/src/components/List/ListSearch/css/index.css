@@ -1,0 +1,193 @@
+#root .list-search-section .search-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+#root .list-search-section .search-box {
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  display: grid;
+  row-gap: 9px;
+  position: relative;
+}
+#root .list-search-section .search-box .filter-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 39px;
+     -moz-column-gap: 39px;
+          column-gap: 39px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper > .tag {
+  width: 60px;
+  font-weight: 700;
+  font-size: 14px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper > .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper > .category > .check-btn {
+  position: relative;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #dbdbdb;
+  background: none;
+  cursor: pointer;
+  margin-right: 4px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper > .category > .check-btn > img {
+  width: 16px;
+  height: 16px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper > .category > .title {
+  font-weight: 400;
+  font-size: 13px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper > .category .checked {
+  border: unset;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .search-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .search-filter > input {
+  width: 211.99px;
+  height: 32.36px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .period-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .period-wrapper > input {
+  width: 109px;
+  height: 32px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .category-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .category-wrapper > .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  font-size: 13px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .category-wrapper > .category > .category-btn {
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .drop-down-section {
+  width: 109px;
+  height: 32px;
+  position: relative;
+  z-index: 10;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .drop-down-section .drop-down-wrapper {
+  width: 100%;
+  max-height: 32px;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  display: grid;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: #dbdbdb;
+  row-gap: 1px;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .drop-down-section .drop-down-wrapper .drop-down-card {
+  background-color: white;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+  color: #696969;
+}
+#root .list-search-section .search-box .filter-line .filter-wrapper .drop-down-section .drop-down-open {
+  max-height: 500px;
+}
+#root .list-search-section .search-box .search-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  padding: 6px 14px;
+  background: #8e54e9;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+}

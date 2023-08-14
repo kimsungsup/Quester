@@ -1,0 +1,21 @@
+#root {
+  .question-table {
+    & > .table-card {
+      & > .card-content {
+        grid-template-columns: 16px 69px 34px 34px 88px 100px 100px;
+        column-gap: 40px;
+
+        & > .ing-state {
+          color: var(--green700);
+        }
+
+        & > .title {
+          text-align: left;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

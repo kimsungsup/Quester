@@ -1,0 +1,78 @@
+#root .input-section {
+  position: relative;
+}
+#root .input-section > .title-wrapper {
+  height: 20px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  margin-bottom: 4px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+#root .input-section > .title-wrapper .title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #54585a;
+}
+#root .input-section > .title-wrapper .dot {
+  margin-left: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: #8e54e9;
+  border-radius: 50%;
+}
+#root .input-section .title {
+  height: 20px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #54585a;
+}
+#root .input-section > textarea {
+  width: 626px;
+  height: 332px;
+  border: 1px solid #dbdbdb;
+  color: black;
+  background-color: transparent;
+}
+#root .input-section > input {
+  width: 480px;
+  height: 50px;
+  color: black;
+  border: 1px solid #dbdbdb;
+  background-color: transparent;
+}
+#root .input-section .right {
+  width: 626px;
+}
+
+@media screen and (max-width: 1439px) {
+  #root .input-section .agreement-btn {
+    width: 100%;
+  }
+  #root .input-section > textarea {
+    width: 100%;
+  }
+  #root .input-section > input {
+    width: 100%;
+  }
+  #root .input-section .right {
+    width: 100%;
+  }
+  #root .input-section .right .is-check-btn {
+    width: 100%;
+  }
+  #root .input-section .left {
+    margin-bottom: 20px;
+  }
+}

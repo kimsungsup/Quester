@@ -1,0 +1,158 @@
+#root .list-table-section {
+  width: 100%;
+}
+#root .list-table-section .table-top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px 0;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper .page-drop-down-section {
+  width: 109px;
+  height: 32px;
+  position: relative;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper .page-drop-down-section .page-drop-down-wrapper {
+  width: 100%;
+  max-height: 32px;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  display: grid;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: #DBDBDB;
+  row-gap: 1px;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper .page-drop-down-section .page-drop-down-wrapper .page-drop-btn {
+  background-color: white;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+  color: #696969;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper .page-drop-down-section .page-drop-down-wrapper .page-drop-btn > .filter-arrow {
+  height: 16px;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper .page-drop-down-section .page-drop-down-open {
+  max-height: 500px;
+}
+#root .list-table-section .table-top-section .paging-change-wrapper .lst-length {
+  font-weight: 700;
+  font-size: 16px;
+}
+#root .list-table-section .table-top-section .table-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+#root .list-table-section .table-top-section .table-btn-wrapper > button, #root .list-table-section .table-top-section .table-btn-wrapper > a {
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+  border-radius: 5px;
+}
+#root .list-table-section .table-top-section .table-btn-wrapper > .black-btn {
+  background-color: var(--gray600);
+}
+#root .list-table-section .table-top-section .table-btn-wrapper > .add-link {
+  background-color: var(--main);
+}
+#root .list-table-section .list-table-content {
+  display: grid;
+  background-color: white;
+}
+#root .list-table-section .list-table-content .table-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 1px var(--gray200);
+  height: 50px;
+  padding: 0 16px;
+}
+#root .list-table-section .list-table-content .table-card .card-content {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+}
+#root .list-table-section .list-table-content .table-card .card-content .check-btn {
+  border: 1px solid #DBDBDB;
+  border-radius: 2px;
+  background-color: white;
+  height: 16px;
+}
+#root .list-table-section .list-table-content .table-card .card-content .check-btn > img {
+  opacity: 0;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+#root .list-table-section .list-table-content .table-card .card-content > .check-active {
+  border: unset;
+}
+#root .list-table-section .list-table-content .table-card .card-content > .check-active > img {
+  opacity: 1;
+}
+#root .list-table-section .list-table-content .table-card .card-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#root .list-table-section .list-table-content .table-card .card-btn-wrapper > button {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--gray500);
+  padding: 6px 14px;
+  background: var(--gray100);
+  border-radius: 5px;
+}
+#root .list-table-section .list-table-content .tag-section {
+  color: #5C5C5C;
+  border-color: var(--gray500);
+}

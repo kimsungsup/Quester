@@ -1,0 +1,34 @@
+#root {
+  .toast {
+    position: fixed;
+    bottom: -300px;
+    width: 500px;
+    padding: 10px;
+    background: var(--main);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    transition: bottom 0.3s ease-in-out;
+    z-index: 1500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .toast-on {
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #root {
+    .toast {
+      width: 90%;
+
+    }
+  }
+}

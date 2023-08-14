@@ -1,0 +1,38 @@
+#root aside {
+  height: 100%;
+  position: fixed;
+  top: 58px;
+  left: 0;
+  width: 183px;
+  background-color: var(--gray600);
+  grid-template-rows: repeat(5, 48px);
+  display: grid;
+}
+#root aside > .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  border-bottom: solid 1px var(--gray500);
+  padding: 0 16px;
+}
+#root aside > .nav-link > .img-wrapper {
+  width: 20px;
+  height: 22px;
+}
+#root aside > .nav-link .nav-link-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+}
+#root aside > .active-nav {
+  background-color: #f5f6f8;
+}
+#root aside > .active-nav .nav-link-title {
+  color: black;
+}

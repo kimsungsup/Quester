@@ -1,0 +1,40 @@
+.fillter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+.fillter .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 13px;
+}
+.fillter .category > .check-btn {
+  position: relative;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #dbdbdb;
+  background: none;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.fillter .category > .check-btn > img {
+  width: 16px;
+  height: 16px;
+}
+.fillter .category > .title {
+  font-weight: 400;
+  font-size: 13px;
+}
+.fillter .category .checked {
+  border: unset;
+}

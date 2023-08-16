@@ -1,0 +1,61 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "editor",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isopen",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "news",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isBlind",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "recruit",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isBlind",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "video",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isBlind",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

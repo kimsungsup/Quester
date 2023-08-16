@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "steadee-pf"
+  },
+  "targets": {
+    "steadee-pf": {
+      "hosting": {
+        "client": [
+          "quester-f1"
+        ],
+        "office": [
+          "quester-office"
+        ]
+      }
+    }
+  }
+}

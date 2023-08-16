@@ -18,12 +18,12 @@
       text-align: center;
       box-sizing: unset;
 
-      &>.title {
+      & > .title {
         font-weight: 700;
         font-size: 18px;
       }
 
-      &>.sub {
+      & > .sub {
         font-weight: 400;
         font-size: 13px;
         line-height: 150%;
@@ -31,26 +31,26 @@
         margin: 8px 0 16px;
       }
 
-      &>.btn-wrapper {
+      & > .btn-wrapper {
         display: grid;
         grid-template-columns: 256px;
 
         row-gap: 8px;
 
-        &>button {
+        & > button {
           font-weight: 700;
           font-size: 16px;
           height: 50px;
           border-radius: 5px;
         }
 
-        &>.trans-btn {
+        & > .trans-btn {
           color: var(--gray400);
           background-color: transparent;
         }
 
-        &>.main-btn {
-          background-color: var(--main);
+        & > .main-btn {
+          background-color: #8e54e9;
           color: white;
         }
       }

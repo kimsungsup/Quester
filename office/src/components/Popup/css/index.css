@@ -51,6 +51,6 @@
   background-color: transparent;
 }
 #root .popup-section .delete-popup > .btn-wrapper > .main-btn {
-  background-color: var(--main);
+  background-color: #8e54e9;
   color: white;
 }

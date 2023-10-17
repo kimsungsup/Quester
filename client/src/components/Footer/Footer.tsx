@@ -17,8 +17,8 @@ const Footer = ({ userAgent }: Props) => {
           <div className="footer-content">
             <div className="footer-text">
               {" "}
-              퀘스터 | 대표 홍길동 {userAgent === "mb" ? <br /> : "|"}{" "}
-              사업자등록번호 123-45-678910
+              퀘스터 | 대표 이정우 {userAgent === "mb" ? <br /> : "|"}{" "}
+              사업자등록번호 464-81-02569
               {userAgent !== "mb" ? <br /> : " | "}
               <span>약관 및 정책</span>
               {userAgent !== "mb" && (

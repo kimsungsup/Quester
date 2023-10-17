@@ -117,7 +117,7 @@ const Education = ({ userAgent }: Props) => {
         </div>
       </div>
 
-      <div className="section3">
+      {/* <div className="section3">
         <div className="title-wrapper">
           <div className="title">POINT 02</div>
           <div className="text">검증된 교육 효과를 경험해보세요</div>
@@ -130,21 +130,20 @@ const Education = ({ userAgent }: Props) => {
         <div className="wrapper">
           <Educationsilde />
         </div>
-      </div>
+      </div> */}
 
       <div className="section4">
         <div className="title-wrapper">
-          <div className="title">POINT 03</div>
-          <div className="text">실제 실험, 그 이상의 교육효과</div>
+          <div className="title">POINT 02</div>
+          <div className="text">
+            실제 실험, 그 이상의 교육 효과 <br />
+            검증된 교육 효과를 경험해보세요
+          </div>
           <div className="sub">
-            서울대학교를 비롯한 3개 대학교 소속 과학교육학 교수진들의
-            <br className="mb" /> 공동연구 결과에 따르면, <br className="pc" />
-            PLAB을 활용하여 학습을 하는 경우, <br className="mb" /> 학생들의
-            자기 주도 학습 능력과 <br className="tablet" />
-            교과 이해도의 <br className="mb" />
-            매우 큰 향상이 나타났습니다. <br />
-            즉, 평균 뿐 아니라 전반적인 학생들의 학습능력과 <br />
-            교과 이해도가 향상하는 큰 교육적 효과를 입증할 수 있었어요.
+            서울대학교를 비롯한 3개 대학교 소속
+            <br className="mb" /> 과학교육학 교수진들의 공동연구 결과에 따르면,{" "}
+            <br /> PLAB을 활용한 학습 시, 학생들의 자기 주도 학습 능력과{" "}
+            <br className="mb" /> 교과 이해도의 매우 큰 향상이 나타났습니다.
           </div>
         </div>
         <div className="wrapper">
@@ -179,7 +178,7 @@ const Education = ({ userAgent }: Props) => {
 
       <div className={`section5 ${allView && "view-wrapper"} `}>
         <div className="title-wrapper white">
-          <div className="title color">POINT 04</div>
+          <div className="title color">POINT 03</div>
           <div className="text white">학생 및 선생님의 생생한 후기</div>
           <div className="sub white">
             가상 실험을 이용하고 학생들과 <br />
@@ -338,7 +337,7 @@ const Education = ({ userAgent }: Props) => {
           <React.Fragment>
             <div className="left">
               <div className="left-wrapper">
-                <div className="title">POINT 05</div>
+                <div className="title">POINT 04</div>
                 <div className="text">
                   교육 커리큘럼에 따라 학년별로 <br />
                   다양한 콘텐츠가 구성되어 있어요
@@ -439,7 +438,7 @@ const Education = ({ userAgent }: Props) => {
           <React.Fragment>
             <div className="left">
               <div className="left-wrapper">
-                <div className="title">POINT 05</div>
+                <div className="title">POINT 04</div>
                 <div className="text">
                   교육 커리큘럼에 따라 학년별로 <br />
                   다양한 콘텐츠가 구성되어 있어요
@@ -541,7 +540,7 @@ const Education = ({ userAgent }: Props) => {
 
       <div className="section7">
         <div className="title-wrapper">
-          <div className="title">POINT 06</div>
+          <div className="title">POINT 05</div>
           <div className="text">
             이미 여러 교육기관과 <br />
             함께하고 있어요
@@ -590,7 +589,8 @@ const section2 = [
       <>
         정해진 순서와 방법만을 따라가며 진행해야 했던 <br /> 기존 시뮬레이션
         콘텐츠와 달리,
-        <br className="mb" /> PLAB은 학생 들이 주체적으로 실험을 할 수 있어요
+        <br className="mb" /> PLAB은 학생들이
+        <br className="pc" /> 주체적으로 실험을 할 수 있어요
       </>
     ),
   },
@@ -610,7 +610,8 @@ const section2 = [
       <>
         PLAB에서는 평소 접하기 어려운 고가의 실험 기구를 <br />
         조작할 수 있으며, 위험한 실험도 진행할 수 있어요 <br />
-        학생들의 창의성과 탐구심을 자극하는 다양한 경험을 제공해보세요 <br />
+        학생들의 창의성과 탐구심을 자극하는 다양한 경험을 <br className="pc" />
+        제공해보세요 <br />
       </>
     ),
 
@@ -630,9 +631,11 @@ const section2 = [
     number: "03",
     text: (
       <>
-        PLAB은 학생들에게 보다 깊은 학습 경험을 제공해요 <br />
+        PLAB은 학생들에게 보다 깊은 학습 경험을
+        <br className="pc" /> 제공해요 <br />
         자유로운 실험을 통해 과정과 결과를 탐구하고, <br />
-        실험 오차와 변인에 대한 이해를 증진시킬 수 있어요
+        실험 오차와 변인에 대한 이해를 증진시킬 수 <br className="pc" />
+        있어요
       </>
     ),
   },

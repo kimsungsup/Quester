@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import Education from "./pages/Education/Education";
 import ScrollTop from "./components/ScrollTop/ScrollTop";
+import Landing from "./pages/Landing/Landing";
 
 function App() {
   const [userAgent, setUserAgent] = useState<UserAgentType>("pc");
@@ -47,13 +48,13 @@ function App() {
       <Header userAgent={userAgent} />
       <ScrollTop />
       <Routes>
-        <Route path="/" element={<Main userAgent={userAgent} />} />
-        <Route path="/technology" element={<Tech userAgent={userAgent} />} />
+        <Route path="/" element={<Landing userAgent={userAgent} />} />
+        {/* <Route path="/technology" element={<Tech userAgent={userAgent} />} /> */}
         <Route path="/contact" element={<Contact userAgent={userAgent} />} />
-        <Route
+        {/* <Route
           path="/education"
           element={<Education userAgent={userAgent} />}
-        />
+        /> */}
       </Routes>
       <Footer userAgent={userAgent} />
     </BrowserRouter>

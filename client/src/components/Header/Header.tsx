@@ -7,137 +7,97 @@ type Props = {
 };
 
 const Header = ({ userAgent }: Props) => {
-  const [HeaderState, setHeaderState] = useState("");
   const [isOpen, setIsOpen] = useState(false);
-
+  const [nowLang, setNowLang] = useState("KOR");
   const handleButtonClick = useCallback(() => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
   }, []);
 
-  const location = useLocation();
+  const ChangeLang = useCallback((item: string) => {
+    setNowLang(item);
+    setIsOpen(false);
+  }, []);
 
-  useEffect(() => {
-    const root = document.getElementById("root");
+  // const location = useLocation();
 
-    function scrollEvent(e: Event) {
-      const target = e.target as HTMLElement;
-      const top = target.scrollTop;
+  // useEffect(() => {
+  //   const root = document.getElementById("root");
 
-      if (location.pathname === "/education" && top > 100) {
-        setHeaderState("education");
-      } else if (top > 100) {
-        setHeaderState("black");
-      } else {
-        setHeaderState("");
-      }
-    }
+  //   function scrollEvent(e: Event) {
+  //     const target = e.target as HTMLElement;
+  //     const top = target.scrollTop;
 
-    root?.addEventListener("scroll", scrollEvent);
+  //     if (location.pathname === "/education" && top > 100) {
+  //       setHeaderState("education");
+  //     } else if (top > 100) {
+  //       setHeaderState("black");
+  //     } else {
+  //       setHeaderState("");
+  //     }
+  //   }
 
-    return () => {
-      root?.removeEventListener("scroll", scrollEvent);
-    };
-  }, [location.pathname]);
+  //   root?.addEventListener("scroll", scrollEvent);
+
+  //   return () => {
+  //     root?.removeEventListener("scroll", scrollEvent);
+  //   };
+  // }, [location.pathname]);
 
   return (
-    <>
-      <header className={HeaderState}>
-        <div className={`wrapper ${isOpen ? "open" : ""}`}>
-          <div className="navbar">
-            <Link to="/" className="logo-link">
-              {isOpen ? (
-                ""
-              ) : (
-                <img
-                  src={
-                    location.pathname === "/education"
-                      ? "/assets/common/logo-education.svg"
-                      : "/assets/common/logo.svg"
-                  }
-                  alt="logo"
-                />
-              )}
-            </Link>
-            {userAgent === "pc" && (
-              <div className="pc-nav-wrapper">
-                {layout.map(({ title, link }, idx) => {
-                  return (
-                    <Link
-                      to={link}
-                      key={idx}
-                      className={`pc-nav font ${
-                        location.pathname === "/education" && "education"
-                      }`}
-                    >
-                      {title}
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-
-          <div className="right">
-            {userAgent === "pc" ? (
-              ""
-            ) : (
-              <button
-                className="menu-btn"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-              >
-                <img
-                  src={`/assets/common/${
-                    isOpen
-                      ? location.pathname === "/education"
-                        ? "cancel"
-                        : "cancel"
-                      : location.pathname === "/education"
-                      ? "menu-education"
-                      : "menu"
-                  }.svg`}
-                  alt={isOpen ? "닫기" : "메뉴"}
-                />
-              </button>
-            )}
+    <header>
+      <div className={`wrapper ${isOpen ? "open" : ""}`}>
+        <Link to={"/"}>
+          <img
+            src="/assets/header/logo.png"
+            srcSet="/assets/header/logo@2x.png 2x, /assets/header/logo@3x.png 3x"
+            alt="logo"
+          />
+        </Link>
+        <div className="right">
+          <Link to={"/contact"} className="nav-btn gmarket">
+            CONTACT US
+          </Link>
+          <div className="lang-wrapper">
+            <button className="lang-btn" onClick={handleButtonClick}>
+              {nowLang}
+              <img src="/assets/header/arrow.svg" alt="arrow" />
+            </button>
+            <div className={`lang-select-wrapper ${isOpen && "open-select"}`}>
+              {lang_layouts.map((item, idx) => {
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => ChangeLang(item)}
+                    className="lang-select-btn"
+                  >
+                    {item}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </header>
-      {userAgent !== "pc" && (
-        <div className={`mb-header ${isOpen && "open-header"}`}>
-          {layout.map(({ link, title }, idx) => {
-            return (
-              <Link
-                to={link}
-                className={`mb-menu font `}
-                key={idx}
-                onClick={handleButtonClick}
-              >
-                {title}
-              </Link>
-            );
-          })}
-        </div>
-      )}
-    </>
+      </div>
+    </header>
   );
 };
 
 export default Header;
 
-const layout = [
-  {
-    title: "TECHNOLOGY",
-    link: "/technology",
-  },
+// const layout = [
+//   {
+//     title: "TECHNOLOGY",
+//     link: "/technology",
+//   },
 
-  {
-    title: "EDUCATION",
-    link: "/education",
-  },
-  {
-    title: "CONTACT US",
-    link: "/contact",
-  },
-];
+//   {
+//     title: "EDUCATION",
+//     link: "/education",
+//   },
+//   {
+//     title: "CONTACT US",
+//     link: "/contact",
+//   },
+// ];
+
+const lang_layouts = ["ENG", "KOR"];

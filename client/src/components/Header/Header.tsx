@@ -46,7 +46,7 @@ const Header = ({ userAgent }: Props) => {
   return (
     <header>
       <div className={`wrapper ${isOpen ? "open" : ""}`}>
-        <Link to={"/"}>
+        <Link to={"/"} className="header-logo">
           <img
             src="/assets/header/logo.png"
             srcSet="/assets/header/logo@2x.png 2x, /assets/header/logo@3x.png 3x"
@@ -54,9 +54,16 @@ const Header = ({ userAgent }: Props) => {
           />
         </Link>
         <div className="right">
-          <Link to={"/contact"} className="nav-btn gmarket">
-            CONTACT US
-          </Link>
+          {userAgent !== "mb" && (
+            <Link to={"/contact"} className="nav-btn gmarket">
+              CONTACT US
+            </Link>
+          )}
+          {userAgent === "mb" && (
+            <Link to={"/contact"} className="mb-nav-btn">
+              <img src="/assets/header/contact.svg" alt="contact" />
+            </Link>
+          )}
           <div className="lang-wrapper">
             <button className="lang-btn" onClick={handleButtonClick}>
               {nowLang}

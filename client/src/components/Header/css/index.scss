@@ -13,8 +13,9 @@
       max-width: 1440px;
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      margin: 0 auto;
 
       .right {
         display: flex;
@@ -33,6 +34,7 @@
 
         .lang-wrapper {
           position: relative;
+          min-width: 80px;
 
           .lang-btn {
             display: flex;
@@ -90,8 +92,14 @@
 @media screen and (max-width: 1439px) and (min-width: 768px) {
   #root {
     header {
-      height: 62px;
+      height: 50px;
+      padding: 0 20px;
 
+      &>.wrapper {
+        .header-logo {
+          width: 127px;
+        }
+      }
     }
   }
 }
@@ -99,9 +107,14 @@
 @media screen and (max-width: 767px) {
   #root {
     header {
-      height: 62px;
+      height: 50px;
+      padding: 0 20px;
 
-
+      &>.wrapper {
+        .header-logo {
+          width: 127px;
+        }
+      }
     }
   }
 }
